@@ -3,7 +3,11 @@ export function range(start, end, step = 1) {
   const output = []
 
   //  implement a range function
-
+  if(start > 0) {
+    for(let x = start; x <= end; x += step) {
+      output.push(x)
+    }
+  }
   return output
 }
 
